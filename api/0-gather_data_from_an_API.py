@@ -30,6 +30,7 @@ def todo_list(employee, todos):
     for task in done_check:
         print(f"\t {task.get('title')}")
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python3 0-gather_data_from_an_API.py <id>")
