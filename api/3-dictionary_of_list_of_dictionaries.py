@@ -8,8 +8,8 @@ import sys
 def todo_all():
     """Exports all username and todo data to a JSON file"""
     base_url = f"https://jsonplaceholder.typicode.com"
-    user_url = f"{base_url}/users/{id}"
-    todos_url = f"{base_url}/todos?userId={id}"
+    user_url = f"{base_url}/users"
+    todos_url = f"{base_url}/todos"
 
     user_response = requests.get(user_url)
     todos_response = requests.get(todos_url)
