@@ -19,6 +19,7 @@ def fetch_data(id):
     return user_response.json(), todos_response.json()
 # data is now JSON-formatted; ready to be used.
 
+
 def todo_list(employee, todos):
     """Displays todo list progress of given employee"""
     name = employee.get('name')
@@ -40,7 +41,7 @@ if __name__ == "__main__":
     except ValueError:
         print("Employee ID must be an integer")
         sys.exit(1)
-    
+
     employee, todos = fetch_data(id)
     if not employee:
         print(f"User {id} not found")
